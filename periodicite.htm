@@ -1,0 +1,51 @@
+﻿<!doctype html>
+<html>
+<head>
+	<title>Périodicité des orbites</title>
+	<meta charset="utf-8">
+	<link rel="icon" href="favicon.ico" />
+	<link href="style.css" rel="stylesheet" media="all" type="text/css"> 
+	<link href="input.css" rel="stylesheet" media="all" type="text/css"> 
+</head>
+
+<body id="body">
+
+<div id="divbg" class="tableau noselect" style="display:none;z-index: 0;" >
+	<p><b>Vitesse :</b>
+	<input type="range" style="width:45%" onMouseMove="changeVit()" onChange="changeVit()" id="rangeVit" value="3" max="6" min="0.01" step="0.001">
+	&nbsp;
+	<label class="checkbox"><input type="checkbox" id="checkSon" onChange="cocheSon()">Son : <span></span></label>
+	</p></div>
+	
+</div>
+
+<div id="divd" style="display:none;">
+	<h1>Périodicité des orbites</h1>
+	<p>Le trajet accompli au cours d'une révolution complète autour du soleil est d'autant plus élevé que la planète en est éloignée.</p>
+	<p>De plus, l'attraction gravitationnelle exercée par le soleil sur les planètes diminue avec le carré de cette distance.</p>
+	<p>Il en résulte que la période sidérale ("l'année") augmente avec la distance au soleil selon une loi mathématique(la 3ème loi de Kepler) : le carré de la période est proportionnelle au cube du demi-grand axe (le grand rayon).</p>
+	<p align=center>T<sup>2</sup> = k.a<sup>3</sup></p>
+	<p align=center><small>(avec T : période sidérale, a : demi-grand axe de l'orbite et k : constante)</small></p>
+	<p>Ainsi, Mercure ne met que 87 jours pour faire le tour du Soleil, alors qu'il en faut plus de 10 000 pour Saturne.</p>
+	<div id="texteSon" style="display:none;">
+	<p><i>Mode sonore activé :</i></p>
+	<p><i>Une note de musique sera jouée à chaque fois qu'une planète réalise une révolution complète. La note sera d'autant plus aigue qu'elle est distante du soleil.</i></p>
+	<p><label class="checkbox"><input type="checkbox" id="checkFormule" onChange="cocheFormule()">Saisir sa propre formule : <span></span></label></p>
+	</div>
+	
+	<div id="texteFormule" style="display:none;">
+	<p><i>Saisissez ci-dessous la formule donnant la fréquence (en Hz) de la note en fonction de la distance (d) au soleil (en millions de km) :</i></p>
+	<p>frequence = <input type="text" id="text_formule" style="width:15em" value="d*2+142"><label id="label_freq"> = ???</label></p>
+	<p><i>Mots clés acceptés : racine, log, fonctions javascript ...</i></p>
+	</div>
+	
+</div>
+<script src="js/wad.min.js"></script>
+<script src="js/initCom.js"></script>
+<script src="js/periodicite.js"></script>
+<script src="js/initMenu.js"></script>
+<script src="js/structure.js"></script>
+<script src="js/initPeriod.js"></script>
+
+</body>
+</html>

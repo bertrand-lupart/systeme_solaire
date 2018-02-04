@@ -1,0 +1,58 @@
+﻿<!doctype html>
+<html>
+<head>
+	<title>Le Soleil</title>
+	<meta charset="utf-8">
+	<link rel="icon" href="favicon.ico" />
+	<link href="style.css" rel="stylesheet" media="all" type="text/css"> 
+</head>
+
+<body id="body">
+
+<div id="divdiag" style="display:none;z-index: 0;">
+	<img src="images/diagr_eau_lune.svg" width="100%" >
+</div>
+
+<div id="divbg" style="display:none;z-index: 0;">
+	<p><i>Caractéristiques du Soleil :</i></p>
+	<li><b>Masse :</b> 2.10<sup>30</sup> kg</li>
+	<li><b>Diamètre :</b> 1 392 684 km</li>
+	<li><b>Période de rotation :</b> 24 à 27 j</li>
+	<li><b>Températures :</b><br>
+	&nbsp;&nbsp;&nbsp;coeur=15 000 000°C, surf.=5 500°C</li>
+
+</div>
+
+<div id="divgstr" style="display:none;z-index: 0;"  class="tableau">
+	<p><i>Enveloppes internes du Soleil :</i></p>
+	<table>
+	<tr><th width="1%"></th><th>Nom</th><th>Dimensions</th><th>Température</th></tr>
+	<tr><td width="1%" bgcolor="#FF7700"></td><td>Photosphère</td><td>140&nbsp;000&nbsp;km<br>d'épaisseur</td><td>5 500 °C</td></tr>
+	<tr><td width="1%" bgcolor="#FFAA00"></td><td>Zone de<br>convection</td><td>70 000 km<br>d'épaisseur</td><td>2 000 000 à<br>5 500 °C</td></tr>
+	<tr><td width="1%" bgcolor="#FFFF77"></td><td>Zone de<br>radiation</td><td>300 000 km<br>d'épaisseur</td><td>2 000 000 °C</td></tr>
+	<tr><td width="1%" bgcolor="#FFFFFF"></td><td>Coeur<br>(ou noyau)</td><td>175 000 km<br>de rayon</td><td>15&nbsp;000&nbsp;000&nbsp;°C</td></tr>
+	</table>
+</div>
+
+<div id="divd" style="display:none;">
+	<h1>Le Soleil</h1>
+	<p>Le Soleil est l'étoile de notre système solaire dont il représente à lui seul 99,86 % de la masse totale.</p>
+	<p>Dans son coeur des réactions de fusion nucléaire consomment l'hydrogène dont il est essentiellement constitué, et dégagent une quantité phénoménale d'énergie.</p>
+	<p>Des éruptions se produisent régulièrement à sa surface et éjectent dans l'espace de grandes quantités de matière ionisée. Ce vent solaire, lorsqu'il parvient à la Terre, est en grande partie dévié par son champ magnétique vers les pôles où l'on peut alors observer des aurores boréales.</p>
+	<br>
+	<div align=center>
+	<img src="images/protubsolaire.jpg" style="width:90%;height:auto;margin:10px;">
+	<p class="legende">Protubérance photographiée lors d'une éruption solaire, par le satellite SDO<br>(Crédits : NASA/ESA)</p>
+	</div>
+</div>
+
+<script src="js/three.min.js"></script>
+<script src="js/initCom.js"></script>
+<script src="js/soleil.js"></script>
+<script src="js/animation.js"></script>
+<script src="js/initMenu.js"></script>
+<script src="js/structure.js"></script>
+<script src="js/init.js"></script>
+
+</body>
+</html>

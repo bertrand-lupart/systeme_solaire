@@ -1,0 +1,80 @@
+﻿<!doctype html>
+<html>
+<head>
+	<title>Plan&egrave;te Saturne</title>
+	<meta charset="utf-8">
+	<link rel="icon" href="favicon.ico" />
+	<link href="style.css" rel="stylesheet" media="all" type="text/css"> 
+</head>
+
+<body id="body">
+
+<div id="divdiag" style="display:none;background-color:#000000">
+	<div id="textdiag">
+	<p><i>Sur les planètes gazeuses, la pression est telle que la distinction entre eau liquide et eau gazeuse n'a plus lieu d'être (l'eau est dans un état critique).</i></p>
+	<p><i>De plus, l'absence de surface solide, et les variations considérables de pression en fonction de la profondeur (dans l'atmosphère interne), rendent la question de savoir si l'eau peut y exister à l'état liquide peu pertinente.</i></p>
+	</div>
+</div>
+
+<div id="divbg" style="display:none;z-index: 0;">
+	<br>
+	<li><b>Type : </b>planète gazeuse</li>
+	<li><b>Satellites :</b> 62+</li>
+	<li><b>Masse :</b> 5,7.10<sup>26</sup> kg</li>
+	<li><b>Diamètre :</b> 116 000 km</li>
+	<li><b>Densité :</b> 0,68</li>
+	<li><b>Distance au soleil : </b><span id="spandist">???</span></li>
+	<li><b>Période de rotation :</b> 10 h</li>
+	<li><b>Période de révolution :</b> 10 747 j</li>
+	<li><b>Températures :</b><br></li>
+	&nbsp;&nbsp;&nbsp;moy=-180°C, min=-201°C, max=-139°C
+
+</div>
+
+
+<div id="divgstr" style="display:none;z-index: 0;"  class="tableau">
+	<p><i>Enveloppes internes de Saturne :</i></p>
+	<table>
+	<tr><th width="1%"></th><th>Nom</th><th>Dimensions</th><th>Composition</th></tr>
+	<tr><td width="1%" bgcolor="#CCEEEE"></td><td>Manteau&nbsp;externe</td><td>23000 km<br>d'épaisseur</td><td>H<br>liquide</td></tr>
+	<tr><td width="1%" bgcolor="#778888"></td><td>Manteau&nbsp;interne</td><td>23000 km<br>d'épaisseur</td><td>H<br>métallique</td></tr>
+	<tr><td width="1%" bgcolor="#88AAAA"></td><td>Noyau&nbsp;externe<br>(glace ?)</td><td>6000 km<br>d'épaisseur</td><td>H,O<br>solide</td></tr>
+	<tr><td width="1%" bgcolor="#AA8888"></td><td>Noyau&nbsp;interne<br>(rocheux ?)</td><td>6000 km<br>de rayon</td><td>Si,O,Fe<br>liquide</td></tr>
+	</table>
+</div>
+
+<div id="divsat" style="display:none;z-index: 0;"  class="tableau">
+	<p><i>Principaux satellites de Saturne :</i></p>
+	<li class="satel"><a href="titan.htm">Titan</a></li>
+	<li class="satel">Iapetus</li>
+	<li class="satel">Rhea</li>
+	<li class="satel">Dione</li>
+	<li class="satel"><a href="mimas.htm">Mimas</a></li>
+	<li class="satel">Tethys</li>
+	<li class="satel"><a href=encelade.htm>Encélade</a></li>
+	<li class="satel">...</li>
+</div>
+
+<div id="divd" style="display:none;">
+	<h1>Saturne</h1>
+	<p>Saturne est reconnaissable par ses anneaux constitués de roches et de glace.</p>
+	<p>Les Anneaux de Saturne sont un des spectacles les plus remarquables du Système solaire et constituent la caractéristique principale de la planète Saturne. À la différence de ceux des autres géantes gazeuses, ils sont extrêmement brillants et peuvent être vus depuis la Terre à l'aide de simples jumelles.</p>
+	<p>Saturne possède un très grand nombre de satellites naturels. Il est difficile de dire combien, dans la mesure où tout morceau de glace des anneaux est un satellite et qu'il n'est pas possible de faire la distinction entre une grande particule et une petite lune.</p>
+	<p>Pour le reste (composition, atmosphère), Saturne est comparable à Jupiter.</p>
+	<div align=center>
+	<img src="images/anneaux_sat_cassini.jpg" style="width:95%;height:auto;margin:10px;">
+	<p class="legende">Anneaux photographiés par la sonde Cassini en 2004<br>Crédits : NASA</p>
+	</div>
+		
+</div>
+
+<script src="js/three.min.js"></script>
+<script src="js/initCom.js"></script>
+<script src="js/saturne.js"></script>
+<script src="js/animation.js"></script>
+<script src="js/initMenu.js"></script>
+<script src="js/structure.js"></script>
+<script src="js/init.js"></script>
+
+</body>
+</html>

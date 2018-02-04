@@ -1,0 +1,56 @@
+﻿<!doctype html>
+<html>
+<head>
+	<title>Excentricité / Ellipticité</title>
+	<meta charset="utf-8">
+	<link rel="icon" href="favicon.ico" />
+	<link href="style.css" rel="stylesheet" media="all" type="text/css"> 
+	<link href="input.css" rel="stylesheet" media="all" type="text/css"> 
+</head>
+
+<body id="body">
+
+<div id="divdiag" style="display:none;z-index: 0;">
+	<img src="images/diagr_eau_lune.svg" width="100%" >
+</div>
+
+<div id="divbg" style="display:none;z-index: 0;">
+	<p><i>Paramètres de l'orbite :</i>
+	<br><i><small>Déplacer les curseurs pour modifier ces paramètres</small></i></p>
+	<table width="95%">
+	<tr>
+	<td width=40%><b>Excentricité</b></td>
+	<td width=40%><input type="range" onMouseMove="getExValue()" onChange="getExValue()" id="rangeEx" style='width:100%' value="0.64" max="0.98" min="0" step="0.001"></td>
+	<td width=20%>&nbsp;&nbsp;<span id="spanEx">0.5</span></td>
+	</tr><tr>
+	<td width=40%><b>Ellipticité</b></td>
+	<td width=40%><input type="range" onMouseMove="getElValue()" onChange="getElValue()" id="rangeEl" style='width:100%'  value="0.5" max="0.801" min="0" step="0.001"></td>
+	<td width=20%>&nbsp;&nbsp;<span id="spanEl">0.5</span></td>
+	</tr>
+	</table>
+	<p><i>Réglages prédéfinis :</i></p>
+	<li class="satel"><a href='javascript:setEx(0.017)'>Valeurs pour la Terre</a></li>
+	<li class="satel"><a href='javascript:setEx(0.22)'>Valeurs pour Eros</a></li>
+	<li class="satel"><a href='javascript:setEx(0.64)'>Valeurs pour la comète 67P</a></li>
+	<li class="satel"><a href='javascript:setEx(0.97)'>Valeurs pour la comète de Halley</a></li>
+	
+</div>
+
+<div id="divd" style="display:none;">
+	<h1>Excentricité / Ellipticité</h1>
+	<p>Les trajectoires décrites par les planètes autour du soleil (orbites) ne sont pas des cercles, mais des ellipses plus ou moins aplaties.</p>
+	<p>L'ellipticité est une mesure de cet aplatissement. Elle est comprise entre les valeurs 0 et 1, le premier cas correspondant à un cercle et le second à une ellipse infiniment allongée.</p>
+	<p>Plus une ellipse est aplatie, plus ses foyers sont excentrés. Le soleil étant situé dans l'un de ses foyers (1ère loi de Kepler), la distance entre la planète et le soleil varie au cours de sa révolution.</p>
+	<p>On appelle périhélie le point de l'orbite où la planète est la plus proche du soleil (aphélie = plus éloignée).</p>
+	<p>Dans les faits, les trajectoires des planètes sont peu excentriques (l'orbite de la Terre a par exemple une excentricité de 0,017), et l'on peut, pour simplifier, considérer qu'elles sont grossièrement circulaires.</p>
+	<p>Ce n'est pas le cas des comètes, qui ont des trajectoires très excentriques et allongées (la comète 67P a par exemple une excentricité de 0,64) !</p>
+</div>
+<script>var aires=false;</script>
+<script src="js/initCom.js"></script>
+<script src="js/paramOrbites.js"></script>
+<script src="js/initMenu.js"></script>
+<script src="js/structure.js"></script>
+<script src="js/initParamOrbites.js"></script>
+
+</body>
+</html>

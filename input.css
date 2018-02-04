@@ -1,0 +1,65 @@
+﻿	input[type='range'] {
+		font-size:inherit;
+		width:auto;
+		-webkit-appearance: none;
+		border-radius: 1em;
+		background-color: #999;
+		height: 0.75em;
+		vertical-align: middle;
+		cursor:pointer;
+	}
+	input[type='range']::-moz-range-track {
+		width:auto;
+		-moz-appearance: none;
+		border-radius: 1em;
+		background-color: #999;
+		height: 1em;
+	}
+	input[type='range']::-webkit-slider-thumb {
+		-webkit-appearance: none;
+		border-radius: 1em;
+		background-color: #FFF;
+		border: 1px solid #999;
+		height: 1em;
+		width: 1em;
+		cursor:pointer;
+	}
+	input[type='range']::-moz-range-thumb {
+		-moz-appearance: none;
+		border-radius: 1em;
+		background-color: #FFF;
+		border: 0px solid #999;
+		height: 1em;
+		width: 1em;
+		cursor:pointer;
+	}
+	
+	input[type="text"] {
+	  margin: 0;
+	  font-size: 0.9em;
+	  appearance: none;
+	  box-shadow: none;
+	  border-radius: none;
+	}
+	
+	
+
+	
+	
+	label.checkbox input[type="checkbox"] {display:none;}
+	label.checkbox span {
+		display:inline-block;
+		border:0.1em solid #BBB;
+		border-radius:0.3em;
+		width:0.8em;
+		height:0.8em;
+		background:#000;
+		vertical-align:middle;
+		margin:0;
+		padding:0;
+		cursor:pointer;
+	}
+	label.checkbox :checked + span {
+		background:#FFF;
+		cursor:pointer;
+	}

@@ -1,0 +1,50 @@
+﻿<!doctype html>
+<html>
+<head>
+	<title>Vitesse orbitale</title>
+	<meta charset="utf-8">
+	<link rel="icon" href="favicon.ico" />
+	<link href="style.css" rel="stylesheet" media="all" type="text/css"> 
+	<link href="input.css" rel="stylesheet" media="all" type="text/css"> 
+</head>
+
+<body id="body">
+
+<div id="divdiag" style="display:none;z-index: 0;">
+	<img src="images/diagr_eau_lune.svg" width="100%" >
+</div>
+
+<div id="divbg" style="display:none;z-index: 0;">
+	<p><i>Paramètres de l'orbite :</i>
+	<br><i><small>Déplacer les curseurs pour modifier ces paramètres</small></i></p>
+	<table width="95%">
+	<tr>
+	<td width=40%><b>Excentricité</b></td>
+	<td width=40%><input type="range" onMouseMove="getExValue()" onChange="getExValue()" id="rangeEx" style='width:100%' value="0.64" max="0.98" min="0" step="0.001"></td>
+	<td width=20%>&nbsp;&nbsp;<span id="spanEx">0.5</span></td>
+	</tr><tr>
+	<td width=40%><b>Ellipticité</b></td>
+	<td width=40%><input type="range" onMouseMove="getElValue()" onChange="getElValue()" id="rangeEl" style='width:100%'  value="0.5" max="0.801" min="0" step="0.001"></td>
+	<td width=20%>&nbsp;&nbsp;<span id="spanEl">0.5</span></td>
+	</tr>
+	</table>
+	
+</div>
+
+<div id="divd" style="display:none;">
+	<h1>Vitesse orbitale</h1>
+	<p>La vitesse orbitale moyenne d'une planète peut être calculée en divisant la circonférence de son orbite (distance parcouru après un tour complet autour du soleil) par sa période sidérale (la durée de l'année).</p>
+	<p>Ainsi, la vitesse orbitale moyenne de la Terre est de 29,8 km/s alors que celle de Vénus, de taille équivalente mais plus proche du Soleil, est de 35 km/s.</p>
+	<p>En effet, plus un corps gravite près du Soleil, plus sa vitesse est élevée. Or, les orbites des planètes (et surtout des comètes) étant elliptiques, leur vitesse varie au cours de leur révolution, en fonction de leur distance au Soleil.</p>
+	<p>Il est possible de calculer ces variations à l'aide de la 2ème loi de Kepler, qui dit que l'aire balayée par le segment reliant la planète au soleil en une durée déterminée est constante.</p>
+	<p>Lorsque la Terre est au plus près du Soleil (périhélie), elle doit parcourir une distance plus importante pour balayer une même aire que lorsqu'elle est à son aphélie. Au périhélie sa vitesse sera de 30,2 km/s contre seulement 29,2 à son aphélie.</p>
+</div>
+<script>var aires=true;</script>
+<script src="js/initCom.js"></script>
+<script src="js/paramOrbites.js"></script>
+<script src="js/initMenu.js"></script>
+<script src="js/structure.js"></script>
+<script src="js/initParamOrbites.js"></script>
+
+</body>
+</html>
