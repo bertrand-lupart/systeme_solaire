@@ -2,7 +2,7 @@
 Une application web pour étudier le système solaire au collège et au lycée
 
 Tester cette application en ligne :
-http://philippe.cosentino.free.fr/productions/planetes/
+http://philippe.cosentino.free.fr/productions/systeme-solaire/
 
 Cette application utilise la librairie three.js
 https://github.com/mrdoob/three.js/
